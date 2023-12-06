@@ -18,7 +18,7 @@ Consider dataArray from the file provided. What is the sum of all of the calibra
 const fs = require('fs');
 
 // Specify the path to your .txt file
-const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/input.txt';
+const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day1/input.txt';
 
 // Read the contents of the file
 fs.readFile(filePath, 'utf8', (err, data) => {
@@ -98,7 +98,7 @@ Consider dataArray from the file provided. What is the sum of all of the calibra
 
 
 // Specify the path to your .txt file
-const filePath2 = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/output.txt';
+const filePath2 = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day1/output.txt';
 
 
 // Read the contents of the file

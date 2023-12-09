@@ -38,14 +38,26 @@ fs.readFile(filePath, 'utf8', (err, data) => {
             // Output: 4 6 7 . . 1 1 4 . .
             //console.log(n)
 
-            if (isNaN(n)) continue //Checking if n is  a number 
+            if (isNaN(n)) continue 
+            //isNan - hecking if n is  a number 
+            //parseInt() - 
+            //isInteger() - 
+            // == - 
+            // === - 
             let num = n;
             while(++j < columns){
                 if(Number.isInteger(parseInt(input[i][j]))) 
                 num += input[i][j]
                 else break;
         }
-        console.log(num);
+
+        //Check the top part
+        const top = i === 0 ? "" : input[i-1].substring(j - num.length - 1, j +1)
+        const btm = i === rows - 1 ? "" : input[i+1].substring(j- num.length - 1, j+1)
+        const lft = input[i][j - num.length - 1] || "";
+        const right = input[i][j] || "";
+        //Log all of the numbers that you have found 
+        console.log(num, top, btm, lft, right);
     }
     }
 

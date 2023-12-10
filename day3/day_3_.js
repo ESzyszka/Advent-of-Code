@@ -16,9 +16,18 @@ Sum up all numbers that are adjacent to a symbol, also diagonaly.
 In this schematic, two numbers are not part numbers because they are not adjacent to a symbol: 114 (top right) and 58 (middle right). 
 Every other number is adjacent to a symbol and so is a part number; their sum is 4361.
 
+Disclaimer:
+For the day 3 challenge I have followed and analysed the solution provided here: https://www.youtube.com/watch?v=dok4MZ_cEyk&t=277s&ab_channel=frontendcoder
 */
 
 const fs = require('fs');
+const hasSymbol = (str) => {
+    //? - "optional chaining" operator
+    //str?.length, you will access length property of the str object, but if str is null or undefined no exception thrown
+    if (str?.length && str.split("").find(x => isNaN(x) && x !== "."))
+        return true
+    return false
+}
 const { compileFunction } = require('vm');
 const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day3/input.txt';
 
@@ -58,10 +67,14 @@ fs.readFile(filePath, 'utf8', (err, data) => {
         const right = input[i][j] || "";
         //Log all of the numbers that you have found 
         console.log(num, top, btm, lft, right);
+
+        if (hasSymbol(top) || hasSymbol(btm) || hasSymbol(lft) || hasSymbol(right))
+            founds.push(Number(num))
     }
     }
 
     //console.log(input);
+    console.log(founds.reduce((a,c) => a+c,0));
 });
 
 

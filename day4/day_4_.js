@@ -1,0 +1,40 @@
+
+
+/*
+
+How to split that card on the left and right 
+
+Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53
+Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
+Card 3:  1 21 53 59 44 | 69 82 63 72 16 21 14  1
+
+*/
+
+const fs = require('fs');
+const readline = require('readline');
+const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day4/input.txt';
+
+//Readstream helps read one line at the time of input.txt files
+const readStream = readline.createInterface({
+  input: fs.createReadStream(filePath),
+  output: process.stdout,
+  terminal: false
+});
+
+//.split(/\s+/) --> split if there is one " " empty space or more "  "
+readStream.on('line', (line) => {
+    const leftArray = line.split(':')[1].split('|')[0].trim().split(' ').map(Number);
+    const rightArray = line.split(':')[1].split('|')[1].trim().split(/\s+/).map(Number);
+    console.log(leftArray, rightArray);
+
+    //Check how many from rightArray have elements from leftArray
+  });
+  
+
+
+
+
+
+
+
+

@@ -21,7 +21,9 @@ console.log(Array)
 //DIAGONAL OPERATIONS:
 console.log(Array.length)  //This will return the number of rows 
 
-for (let i = 0; i< Array.length; i++ )
+for (let i = 0; i< Array.length; i++ ){
+    
+}
 
 //NESTED ARRAYS: 
 

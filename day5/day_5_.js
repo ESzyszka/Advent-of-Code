@@ -42,11 +42,10 @@ const fs = require('fs');
 const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day5/input.txt';
 
 
-//Because the
 fs.readFile(filePath, 'utf8', (err, data) => {
 
-    const input = data.split("\n\n");
+    const input = data.split("\n\n"); //data.split("\n\n") --> This is very useful when you want to split the input data which 
 
-    console.log(input[1]);
+    console.log(input[0]);
 
 });

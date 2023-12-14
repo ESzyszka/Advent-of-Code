@@ -25,8 +25,43 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
 ### Pre-processing
 
-`data.split("\n\n");`
+```
+INPUT:
+seeds: 79 14 55 13
 
-### Arrays
+seed-to-soil map:
+50 98 2
+52 50 48
+
+soil-to-fertilizer map:
+0 15 37
+37 52 2
+39 0 15
+```
+
+If there are spaces like this in your input.txt file and you want to separate them based on the empty lines you can use the following code where input[0] will log to the console:
+
+```
+const fs = require('fs');
+const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day5/input.txt';
+
+
+fs.readFile(filePath, 'utf8', (err, data) => {
+
+    const input = data.split("\n\n"); //data.split("\n\n") --> This is very useful when you want to split the input data which
+
+    console.log(input[0]);
+
+});
+```
+
+```
+OUTPUT:
+seeds: 79 14 55 13
+```
+
+### DataStructures: Arrays
 
 ## Destructing assignment in arrays
+
+### DataStructures: Objects

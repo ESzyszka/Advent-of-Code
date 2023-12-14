@@ -25,6 +25,8 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
 ### Pre-processing
 
+If there are spaces like this in your input.txt file and you want to separate them based on the empty lines you can use the following code where input[0] will log to the console:
+
 ```
 INPUT:
 seeds: 79 14 55 13
@@ -39,9 +41,8 @@ soil-to-fertilizer map:
 39 0 15
 ```
 
-If there are spaces like this in your input.txt file and you want to separate them based on the empty lines you can use the following code where input[0] will log to the console:
-
 ```
+CODE
 const fs = require('fs');
 const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day5/input.txt';
 

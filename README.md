@@ -2,12 +2,13 @@
 
 This repository contains my solutions to [ 2023 Advent of Code](https://adventofcode.com/).
 This readme file also contains core JavaScript concepts that I have revised while solving the problems.
-You can find extensive comments embeded in the code that will help understand key methods used such as: regular expressions, array manipulation and JavaScript specific methods such as isNaN(), hasSymbol() and more;
+You can find extensive comments embeded in the code that will help understand key methods used such as: regular expressions, array manipulation, destructing array assignment and JavaScript specific methods such as isNaN(), hasSymbol() and more;
 
 ## Table of Contents
 
 - [Loading files in JS](#loading-files-in-js)
 - [Pre-processing](#pre-processing)
+- [Arrays](#Arrays)
 
 ### Loading files in JS
 
@@ -25,3 +26,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 ### Pre-processing
 
 `data.split("\n\n");`
+
+### Arrays
+
+## Destructing assignment in arrays

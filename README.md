@@ -63,12 +63,12 @@ seeds: 79 14 55 13
 
 ### Methods
 
-| Name       | Description         | INPUT                                          | CODE       | OUTPUT |
-| ---------- | ------------------- | ---------------------------------------------- | ---------- | ------ |
-| x.length() |                     |                                                |            |        |
-| x.map()    |                     |                                                |            |        |
-| x.trim()   | Remove white spaces | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.trim()` |        |
-| parseInt() |                     |                                                |            |        |
+| Name       | Description         | INPUT                                          | CODE           | OUTPUT                     |
+| ---------- | ------------------- | ---------------------------------------------- | -------------- | -------------------------- |
+| x.length() |                     |                                                |                |                            |
+| x.map()    |                     |                                                |                |                            |
+| x.trim()   | Remove white spaces | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.trim()`     |                            |
+| parseInt() | String --> Integer  | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.parseInt()` | `[ Nan, 79, 14, 55, 13 ] ` |
 
 ### DataStructures: Arrays
 

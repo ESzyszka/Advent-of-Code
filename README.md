@@ -61,6 +61,15 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 seeds: 79 14 55 13
 ```
 
+### Methods
+
+| Name | Description | INPUT | CODE | OUTPUT
+| ---------- | ----------- | | |
+| x.length() | | | |
+| x.map() | | | |
+| x.trim() | remove white spaces | let x = [ 'seeds:', '79', '14', '55', '13' ]| `x.trim()`|
+| parseInt() | | | |
+
 ### DataStructures: Arrays
 
 ## Destructing assignment in arrays

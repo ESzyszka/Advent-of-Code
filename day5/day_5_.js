@@ -44,8 +44,13 @@ const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day5/input.txt';
 
 fs.readFile(filePath, 'utf8', (err, data) => {
 
-    const input = data.split("\n\n"); //data.split("\n\n") --> This is very useful when you want to split the input data which 
+     //Spliting data based on empty line
+    const input = data.split("\n\n");
 
-    console.log(input[0]);
+    //Extracting the data from input.txt
+    const seeds = input[0].split(" ").map((x) => parseInt(x.trim()));
+
+
+    console.log(input[0], seeds);
 
 });

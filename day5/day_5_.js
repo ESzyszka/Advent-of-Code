@@ -38,4 +38,15 @@ humidity-to-location map:
 //***********************************************
 
 
+const fs = require('fs');
+const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day5/input.txt';
 
+
+//Because the
+fs.readFile(filePath, 'utf8', (err, data) => {
+
+    const input = data.split("\n\n");
+
+    console.log(input[1]);
+
+});

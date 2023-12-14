@@ -63,12 +63,15 @@ seeds: 79 14 55 13
 
 ### Methods
 
-| Name       | Description         | INPUT                                          | CODE           | OUTPUT                     |
-| ---------- | ------------------- | ---------------------------------------------- | -------------- | -------------------------- |
-| x.length() |                     |                                                |                |                            |
-| x.map()    |                     |                                                |                |                            |
-| x.trim()   | Remove white spaces | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.trim()`     |                            |
-| parseInt() | String --> Integer  | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.parseInt()` | `[ Nan, 79, 14, 55, 13 ] ` |
+| Name       | Description         | INPUT                                          | CODE                       | OUTPUT                     |
+| ---------- | ------------------- | ---------------------------------------------- | -------------------------- | -------------------------- |
+| x.length() |                     |                                                |                            |                            |
+| x.map()    |                     |                                                |                            |                            |
+| x.trim()   | Remove white spaces | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `x.trim()`                 |                            |
+| parseInt() | String --> Integer  | `let x = [ 'seeds:', '79', '14', '55', '13' ]` | `parseInt(x)`              | `[ Nan, 79, 14, 55, 13 ] ` |
+| .filter()  |                     | `let x = [NaN, 79, 14, 55, 13];`               | `x.filter(i => !isNaN(i))` | `[ 79, 14, 55, 13 ] `      |
+
+.filter(x => !isNaN(x))
 
 ### DataStructures: Arrays
 

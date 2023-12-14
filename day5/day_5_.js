@@ -48,7 +48,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     const input = data.split("\n\n");
 
     //Extracting the data from input.txt
-    const seeds = input[0].split(" ").map((x) => parseInt(x.trim()));
+    const seeds = input[0].split(" ").map((x) => parseInt(x.trim())).filter(x => !isNaN(x));
 
 
     console.log(input[0], seeds);

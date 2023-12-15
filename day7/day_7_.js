@@ -1,1 +1,1 @@
-//Solutions
+//Solutions for day 7 

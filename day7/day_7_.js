@@ -1,1 +1,2 @@
-//Solutions for day 7 
+//**************  Solutions for day 7  **************
+

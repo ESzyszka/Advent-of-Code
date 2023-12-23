@@ -60,7 +60,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
 // Function that uses filteredArray
 function processFilteredArray() {
-    // Your logic using filteredArray goes here
+    
     console.log('Filtered Array globally:', filteredArray[1]);
 
     // Move the loop inside the function

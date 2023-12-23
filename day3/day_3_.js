@@ -24,10 +24,12 @@ const fs = require('fs');
 const hasSymbol = (str) => {
     //? - "optional chaining" operator
     //str?.length, you will access length property of the str object, but if str is null or undefined no exception thrown
+    //isNaN(x) --> is not a number 
     if (str?.length && str.split("").find(x => isNaN(x) && x !== "."))
         return true
     return false
 }
+
 const { compileFunction } = require('vm');
 const filePath = '/Users/ewa.szyszka/Desktop/AoC/Advent-of-Code/day3/input.txt';
 
@@ -55,6 +57,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
             // === - 
             let num = n;
             while(++j < columns){
+                //++j means here This means to increment the value of j by 1 before the comparison.
                 if(Number.isInteger(parseInt(input[i][j]))) 
                 num += input[i][j]
                 else break;

@@ -11,22 +11,20 @@ GGG = (GGG, GGG)
 ZZZ = (ZZZ, ZZZ)
 */
 
-//******************  Each line of input.txt  ******************
+//******************  Left Right instructions from input.txt  ******************
 const fs = require("fs");
 const input = fs.readFileSync("input.txt", "utf8").split("\n");
 input.pop()
 
 const LR = String(input[0])
 
-console.log(typeof LR)
-//**************************************************************
+console.log(typeof LR, LR)
+//******************************************************************************
 
 
-//**************  nullish coalescing operator  **************
-//LR = LR ?? 'LLRRRLLRLRRRLLRLRLRLRLRRRLRRLRRLRLLLRRLLRRLRRLRRLRRRLLLRRLRLRRRLRRRLRLRRLRRRLRLRRRLRLRLLLRLRRLRLRRLRRRLRLRRRLRRRLRRRLRRRLRLRRRLRRRLRLLRRLRLRLRRRLRRLRRRLRRRLRRRLRRRLLLLRRLLRLRRLRRLRRRLRRRLLLRRLRRLRLRRLRRRLRRLRLRRRLRLRRLLRLLRRLRLRRRLRRLRRLRLRRLLLRRRLRLRRRLRLRLLRLRLRRRLRLRLRRRLRRLRRLRRRLRRLLRRRR';
 
 
-// Given data
+// Given data in 
 const data = [
     ['VTM', ['VPB', 'NKT']],
     ['LHN', ['DLF', 'GQV']],
@@ -55,5 +53,22 @@ const data = [
   });
   
   // Display the hash table
-  console.log(hashTable["VTM"]);
+  console.log(hashTable["KPM"][0]);
+
+
+ 
+  let index = 0;
   
+  while (index < LR.length && LR[index] !== ' ') {
+    console.log(LR[index]);
+    index++;
+  }
+
+  
+  let start = hashTable["AAA"];
+
+
+  let stop = hashTable["ZZZ"];
+
+  //**************  nullish coalescing operator  **************
+//LR = LR ?? 'LLRRRLLRLRRRLLRLRLRLRLRRRLRRLRRLRLLLRRLLRRLRRLRRLRRRLLLRRLRLRRRLRRRLRLRRLRRRLRLRRRLRLRLLLRLRRLRLRRLRRRLRLRRRLRRRLRRRLRRRLRLRRRLRRRLRLLRRLRLRLRRRLRRLRRRLRRRLRRRLRRRLLLLRRLLRLRRLRRLRRRLRRRLLLRRLRRLRLRRLRRRLRRLRLRRRLRLRRLLRLLRRLRLRRRLRRLRRLRLRRLLLRRRLRLRRRLRLRLLRLRLRRRLRLRLRRRLRRLRRLRRRLRRLLRRRR';

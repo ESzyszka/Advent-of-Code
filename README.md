@@ -63,14 +63,19 @@ seeds: 79 14 55 13
 
 ### Methods
 
-| Name       | Description         | INPUT                              | CODE                                | OUTPUT             |
-| ---------- | ------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
-| x.length() |                     |                                    |                                     |                    |
-| x.map()    |                     |                                    |                                     |                    |
-| x.trim()   | Remove white spaces | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
-| parseInt() | String --> Integer  | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
-| .filter()  |                     | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
-| .forEach() |                     | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
+| Name       | Description          | INPUT                              | CODE                                | OUTPUT             |
+| ---------- | -------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
+| x.length() |                      |                                    |                                     |                    |
+| x.map()    |                      |                                    |                                     |                    |
+| x.trim()   | Remove white spaces  | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
+| parseInt() | String --> Integer   | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
+| .filter()  |                      | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
+| .forEach() |                      | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
+| typoeof    | Returns varible type | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+
+### JS concepts
+
+##
 
 ### DataStructures: Arrays
 

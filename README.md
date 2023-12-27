@@ -75,7 +75,7 @@ seeds: 79 14 55 13
 
 ### JS concepts
 
-##
+## nullish coalescing operator
 
 ### DataStructures: Arrays
 

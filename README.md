@@ -72,7 +72,7 @@ seeds: 79 14 55 13
 | .filter()    |                             | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
 | .forEach()   |                             | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
 | typoeof      | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
-| setTimeout() | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| setTimeout() | Call back function          | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
 | String()     | Turns into a string         | `input = x `                       | `String(input)`                     | `"x"`              |
 | .at()        | Return charater at an index | `const alphabet = "abcd"`          | `alphabet.at(1)`                    | `"b"`              |
 | .substring() | Return a substring          | `const alphabet = "abcdddd"`       | `alphabet.substring(3,6);`          | `"dddd"`           |
@@ -87,11 +87,18 @@ seeds: 79 14 55 13
 
 ### JS concepts
 
-| Name            | Description         | INPUT                       | CODE               | OUTPUT       |
-| --------------- | ------------------- | --------------------------- | ------------------ | ------------ |
-| concatenate     | adds two things     | `let A = "A" let B = "B"`   | `A + B`            | `"AB"`       |
-| +=              | plus eqaul operator | `let name = "Sam";`         | `name += " Blue";` | `"Sam Blue"` |
-| template string |                     | `This is a template string` | `name += " Blue";` | `"Sam Blue"` |
+| Name                    | Description                         | INPUT                       | CODE               | OUTPUT       |
+| ----------------------- | ----------------------------------- | --------------------------- | ------------------ | ------------ |
+| concatenate             | adds two things                     | `let A = "A" let B = "B"`   | `A + B`            | `"AB"`       |
+| +=                      | plus eqaul operator                 | `let name = "Sam";`         | `name += " Blue";` | `"Sam Blue"` |
+| template string         |                                     | `This is a template string` | `name += " Blue";` | `"Sam Blue"` |
+| reference vs value      |                                     | ``                          | ``                 | ``           |
+| == vs ===               |                                     | ``                          | ``                 | ``           |
+| immutability            |                                     | ``                          | ``                 | ``           |
+| asynchronous            | Multiple processes at the same time | ``                          | ``                 | ``           |
+| async / await           |                                     | ``                          | ``                 | ``           |
+| try / catch             |                                     | ``                          | ``                 | ``           |
+| export default function |                                     | ``                          | ``                 | ``           |
 
 #### nullish coalescing operator
 

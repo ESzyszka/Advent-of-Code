@@ -117,12 +117,13 @@ This regex returns the number from a string:
 INPUT: "200px" <br>
 OUTPUT: "200" <br>
 
-`export function getBoxWidth(value) { <br>
+````export function getBoxWidth(value) { <br>
     return value.match(/\d+/g); <br>
-}`
+}```
 
 ### DataStructures: Arrays
 
 ## Destructing assignment in arrays
 
 ### DataStructures: Objects
+````

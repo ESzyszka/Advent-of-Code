@@ -63,18 +63,35 @@ seeds: 79 14 55 13
 
 ### Methods
 
-| Name         | Description          | INPUT                              | CODE                                | OUTPUT             |
-| ------------ | -------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
-| x.length()   |                      |                                    |                                     |                    |
-| x.map()      |                      |                                    |                                     |                    |
-| x.trim()     | Remove white spaces  | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
-| parseInt()   | String --> Integer   | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
-| .filter()    |                      | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
-| .forEach()   |                      | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
-| typoeof      | Returns varible type | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
-| setTimeout() | Returns varible type | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| Name         | Description                 | INPUT                              | CODE                                | OUTPUT             |
+| ------------ | --------------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
+| x.length()   |                             |                                    |                                     |                    |
+| x.map()      |                             |                                    |                                     |                    |
+| x.trim()     | Remove white spaces         | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
+| parseInt()   | String --> Integer          | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
+| .filter()    |                             | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
+| .forEach()   |                             | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
+| typoeof      | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| setTimeout() | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| String()     | Turns into a string         | `input = x `                       | `String(input)`                     | `"x"`              |
+| .at()        | Return charater at an index | `const alphabet = "abcd"`          | `alphabet.at(1)`                    | `"b"`              |
+| .substring() | Return a substring          | `const alphabet = "abcdddd"`       | `alphabet.substring(3,6);`          | `"dddd"`           |
+| .slice()     | Cuts & returns right str    | `let word = "Yuto Kimura"`         | `word.slice(1)`                     | `uto Kimura`       |
+
+### Operators
+
+| Name | Description         | INPUT               | CODE               | OUTPUT       |
+| ---- | ------------------- | ------------------- | ------------------ | ------------ |
+|      |                     |                     |                    |              |
+| +=   | plus eqaul operator | `let name = "Sam";` | `name += " Blue";` | `"Sam Blue"` |
 
 ### JS concepts
+
+| Name            | Description         | INPUT                       | CODE               | OUTPUT       |
+| --------------- | ------------------- | --------------------------- | ------------------ | ------------ |
+| concatenate     | adds two things     | `let A = "A" let B = "B"`   | `A + B`            | `"AB"`       |
+| +=              | plus eqaul operator | `let name = "Sam";`         | `name += " Blue";` | `"Sam Blue"` |
+| template string |                     | `This is a template string` | `name += " Blue";` | `"Sam Blue"` |
 
 #### nullish coalescing operator
 

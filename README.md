@@ -110,6 +110,17 @@ seeds: 79 14 55 13
 
 - You cannot use them as object constructors
 
+### Regular expressions
+
+This regex returns the number from a string:
+
+INPUT: "200px"
+OUTPUT: "200"
+
+`export function getBoxWidth(value) {
+    return value.match(/\d+/g);
+}`
+
 ### DataStructures: Arrays
 
 ## Destructing assignment in arrays

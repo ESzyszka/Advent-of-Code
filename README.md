@@ -114,11 +114,11 @@ seeds: 79 14 55 13
 
 This regex returns the number from a string:
 
-INPUT: "200px"
-OUTPUT: "200"
+INPUT: "200px" <br>
+OUTPUT: "200" <br>
 
-`export function getBoxWidth(value) {
-    return value.match(/\d+/g);
+`export function getBoxWidth(value) { <br>
+    return value.match(/\d+/g); <br>
 }`
 
 ### DataStructures: Arrays

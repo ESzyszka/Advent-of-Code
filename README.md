@@ -126,4 +126,5 @@ OUTPUT: "200" <br>
 ## Destructing assignment in arrays
 
 ### DataStructures: Objects
+
 ````

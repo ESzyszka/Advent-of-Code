@@ -61,5 +61,23 @@ class Stack {
 
 
 const capitals = new Stack();
+capitals.push("Yerevan")
 capitals.push("Ouagadougou");
 console.log("This is the stack: " + JSON.stringify(capitals.items));
+
+
+//**********  Object Oriented Programming  ****************
+
+//Creating a class Person 
+function Person(name, surname, age){
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+}
+
+//Initializing a class 
+
+const person_one = new Person("경은", "김", 23);
+const person_two = new Person("Lu", "Ga", 60);
+
+document.getElementById("demo").innerHTML = "第一人の年齢: " + person_one.age + ". 第二人の年齢:  " + person_two.age + "."; 

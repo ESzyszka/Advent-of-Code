@@ -43,14 +43,9 @@ p.then((message) => {
     console.log("This is catch: " + message)
 })
 
-//******  What is function expression  ********
-// function stored in a const
-const multiplier = function(number){
-    return number * 2;
-}
 
 //**********  Stack  ****************
-export default class Stack {
+class Stack {
     constructor(){
         this.items = [];
     }
@@ -59,8 +54,12 @@ export default class Stack {
         this.items.push(item);
     }
 
-
     pop(){
-        this.items.pop(item)
+        this.items.pop(item);
     }
 }
+
+
+const capitals = new Stack();
+capitals.push("Ouagadougou");
+console.log("This is the stack: " + JSON.stringify(capitals.items));

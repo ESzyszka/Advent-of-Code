@@ -63,20 +63,21 @@ seeds: 79 14 55 13
 
 ### Methods
 
-| Name         | Description                 | INPUT                              | CODE                                | OUTPUT             |
-| ------------ | --------------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
-| x.length()   |                             |                                    |                                     |                    |
-| x.map()      |                             |                                    |                                     |                    |
-| x.trim()     | Remove white spaces         | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
-| parseInt()   | String --> Integer          | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
-| .filter()    |                             | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
-| .forEach()   |                             | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
-| typoeof      | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
-| setTimeout() | Call back function          | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
-| String()     | Turns into a string         | `input = x `                       | `String(input)`                     | `"x"`              |
-| .at()        | Return charater at an index | `const alphabet = "abcd"`          | `alphabet.at(1)`                    | `"b"`              |
-| .substring() | Return a substring          | `const alphabet = "abcdddd"`       | `alphabet.substring(3,6);`          | `"dddd"`           |
-| .slice()     | Cuts & returns right str    | `let word = "Yuto Kimura"`         | `word.slice(1)`                     | `uto Kimura`       |
+| Name          | Description                 | INPUT                              | CODE                                | OUTPUT             |
+| ------------- | --------------------------- | ---------------------------------- | ----------------------------------- | ------------------ |
+| x.length()    |                             |                                    |                                     |                    |
+| x.map()       |                             |                                    |                                     |                    |
+| x.trim()      | Remove white spaces         | `let x = [ 'seeds:', '79', '14' ]` | `x.trim()`                          |                    |
+| parseInt()    | String --> Integer          | `let x = [ 'seeds:', '79', '14' ]` | `parseInt(x)`                       | `[ Nan, 79, 14 ] ` |
+| .filter()     |                             | `let x = [NaN, 79, 14, 55, 13]`    | `x.filter(i => !isNaN(i))`          | `[ 79, 14 ] `      |
+| .forEach()    |                             | `const x = [1, 2, 3, 4, 5]`        | `x.forEach( (i) => console.log(i))` | `1,2,3,4,5`        |
+| typoeof       | Returns varible type        | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| setTimeout()  | Call back function          | `let myVariable = "LR";`           | `typeof myVariable;`                | `string`           |
+| String()      | Turns into a string         | `input = x `                       | `String(input)`                     | `"x"`              |
+| .at()         | Return charater at an index | `const alphabet = "abcd"`          | `alphabet.at(1)`                    | `"b"`              |
+| .substring()  | Return a substring          | `const alphabet = "abcdddd"`       | `alphabet.substring(3,6);`          | `"dddd"`           |
+| .slice()      | Cuts & returns right str    | `let word = "Yuto Kimura"`         | `word.slice(1)`                     | `uto Kimura`       |
+| constructor() | Cuts & returns right str    | `let word = "Yuto Kimura"`         | `word.slice(1)`                     | `uto Kimura`       |
 
 ### Operators
 
@@ -99,6 +100,9 @@ seeds: 79 14 55 13
 | async / await           |                                     | ``                          | ``                 | ``           |
 | try / catch             |                                     | ``                          | ``                 | ``           |
 | export default function |                                     | ``                          | ``                 | ``           |
+| this                    |                                     | ``                          | ``                 | ``           |
+
+### DataStructures: Stacks
 
 #### nullish coalescing operator
 
@@ -126,5 +130,6 @@ OUTPUT: "200" <br>
 ## Destructing assignment in arrays
 
 ### DataStructures: Objects
+
 
 ````

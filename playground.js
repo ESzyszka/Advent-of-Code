@@ -48,3 +48,19 @@ p.then((message) => {
 const multiplier = function(number){
     return number * 2;
 }
+
+//**********  Stack  ****************
+export default class Stack {
+    constructor(){
+        this.items = [];
+    }
+
+    push(item){
+        this.items.push(item);
+    }
+
+
+    pop(){
+        this.items.pop(item)
+    }
+}

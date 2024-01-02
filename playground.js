@@ -81,3 +81,18 @@ const person_one = new Person("경은", "김", 23);
 const person_two = new Person("Lu", "Ga", 60);
 
 document.getElementById("demo").innerHTML = "第一人の年齢: " + person_one.age + ". 第二人の年齢:  " + person_two.age + "."; 
+
+//*********************  Functions  *********************
+/*
+The main difference between Function declaration and Function expression is we can invoke the function add(2,3) before its declaration also, 
+but the function addition(2,3) needs to invoke after it is defined.
+
+*/
+//Function declaration
+function add(a,b){
+    return a+b;
+}
+//Function expression
+const addition = function(a,b){
+    return a+b;
+}

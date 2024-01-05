@@ -103,7 +103,7 @@ function Person(name, surname, age){
     this.age = age;
 }
 
-//Initializing a class 
+//*******  Initializing a class   *******
 
 const person_one = new Person("경은", "김", 23);
 const person_two = new Person("Lu", "Ga", 60);

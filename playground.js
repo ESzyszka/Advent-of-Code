@@ -86,12 +86,12 @@ const addition = function(a,b){
     return a+b;
 }
 
-//Arrow function expression
+//**********   Arrow function expression  ********** 
 const arrow_add = (a,b) =>{
     return a+b;
 }
 
-//Arrow function expression --> shorter
+//**********  Arrow function expression --> shorter ********** 
 const arrow_add_short = (a,b) => a+b;
 
 //**********  Object Oriented Programming  ****************

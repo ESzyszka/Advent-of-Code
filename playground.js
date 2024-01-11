@@ -81,12 +81,12 @@ function add(a,b){
     return a+b;
 }
 
-//****************  Function expression  ****************
+//****************  Function expression  **************
 const addition = function(a,b){
     return a+b;
 }
 
-//**********   Arrow function expression  ********** 
+//**********   Arrow function expression  ******** 
 const arrow_add = (a,b) =>{
     return a+b;
 }

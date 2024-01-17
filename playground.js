@@ -1,4 +1,4 @@
-//Higher order functions (take )
+//****** Higher order functions (take ) ***** 
 const input = [1,2,3,4,5];
 const output = input.map(multiplier)
 console.log(output)

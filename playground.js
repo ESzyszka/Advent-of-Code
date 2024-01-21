@@ -1,21 +1,21 @@
 //****** Higher order functions (take ) ***** 
-const input = [1,2,3,4,5];
+const input = [1, 2, 3, 4, 5];
 const output = input.map(multiplier)
 console.log(output)
 
-function multiplier(number){
-    return number *2
+function multiplier(number) {
+    return number * 2
 }
 
-//** The same that is above can be in this case done with .map() ** 
-const input_2 = [1,2,3,4,5];
-const new_2 = input_2.map(i => i*2)
+//*** The same that is above can be in this case done with .map() ***
+const input_2 = [1, 2, 3, 4, 5];
+const new_2 = input_2.map(i => i * 2)
 console.log("Map function input: " + input_2 + "Map function output* " + new_2)
 
 //**********  setTimeout()  **********
 //The function passed inside the setTimeout does not have ()
 //1000 = 1 second
-function message(){
+function message() {
     console.log("I am late to the console");
 }
 
@@ -25,8 +25,8 @@ setTimeout(message, 1000)
 
 
 //**********  forEach  ****************
-const numbers = [1,2,3,4,5];
-numbers.forEach(number =>{
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(number => {
     console.log(number)
 })
 //*************************************
@@ -34,8 +34,8 @@ numbers.forEach(number =>{
 
 //**********  JS promises  *************
 let p = new Promise((resolve, reject) => {
-    let a = 1+4;
-    if (a == 2){
+    let a = 1 + 4;
+    if (a == 2) {
         resolve("Success")
     } else {
         reject("Failure")
@@ -51,15 +51,15 @@ p.then((message) => {
 
 //**********  Stack  ****************
 class Stack {
-    constructor(){
+    constructor() {
         this.items = [];
     }
 
-    push(item){
+    push(item) {
         this.items.push(item);
     }
 
-    pop(){
+    pop() {
         this.items.pop(item);
     }
 }
@@ -77,27 +77,27 @@ but the function addition(2,3) needs to invoke after it is defined.
 */
 
 //****** Function declaration ******
-function add(a,b){
-    return a+b;
+function add(a, b) {
+    return a + b;
 }
 
 //**************  Function expression  ************
-const addition = function(a,b){
-    return a+b;
+const addition = function (a, b) {
+    return a + b;
 }
 
 //**********   Arrow function expression  ******** 
-const arrow_add = (a,b) =>{
-    return a+b;
+const arrow_add = (a, b) => {
+    return a + b;
 }
 
 //**********  Arrow function expression --> shorter ********** 
-const arrow_add_short = (a,b) => a+b;
+const arrow_add_short = (a, b) => a + b;
 
 //**********  Object Oriented Programming  ****************
 
 //Creating a class Person 
-function Person(name, surname, age){
+function Person(name, surname, age) {
     this.name = name;
     this.surname = surname;
     this.age = age;

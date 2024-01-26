@@ -7,7 +7,7 @@ function multiplier(number) {
     return number * 2
 }
 
-//*** The same that is above can be in this case done with .map() ***
+//****** The same that is above can be in this case done with .map() ***
 const input_2 = [1, 2, 3, 4, 5];
 const new_2 = input_2.map(i => i * 2)
 console.log("Map function input: " + input_2 + "Map function output* " + new_2)

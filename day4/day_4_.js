@@ -19,13 +19,13 @@ function findCommonNumbers(array1, array2) {
     // =>       - arrow function for anonymous functions in JS 
     const commonNumbers = array1.filter(number => array2.includes(number));
     return commonNumbers;
-  }
+}
 
 let summingPoints = 0;
 
 function countingPoints(inputLength) {
     if (inputLength >= 0 && inputLength <= 24) {
-        summingPoints += Math.pow(2, inputLength-1);
+        summingPoints += Math.pow(2, inputLength - 1);
     } else {
         console.log("Invalid input length");
     }
@@ -48,7 +48,7 @@ readStream.on('line', (line) => {
     console.log("Numbers in common", commonNumbers);
 });
 
-// STEP 4: Move the overall sum logging inside the 'close' event
+//STEP 4: Move the overall sum logging inside the 'close' event
 readStream.on('close', () => {
     console.log("Overall sum: ", summingPoints);
 });

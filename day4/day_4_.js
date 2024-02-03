@@ -48,7 +48,7 @@ readStream.on('line', (line) => {
     console.log("Numbers in common", commonNumbers);
 });
 
-//STEP 4: Move the overall sum logging inside the 'close' event
+//  STEP 4: Move the overall sum logging inside the 'close' event
 readStream.on('close', () => {
     console.log("Overall sum: ", summingPoints);
 });
